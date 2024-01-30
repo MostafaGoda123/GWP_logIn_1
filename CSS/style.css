@@ -1,0 +1,84 @@
+:root {
+   --mainColor : orange ;
+   /* --mainColor : #00d80e ; */
+   }
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;   }
+html {
+   font-family: sans-serif;
+   font-size: 62.5%;   }
+@media (max-width : 768px) {
+   html {
+   font-size: 43.75%;
+   }   }
+body {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: url(../imgs/bbgg.png);
+   background-position: center;
+   background-size: cover;   }
+/*----------------*/
+.log_in {
+   width: 40rem;
+   height: 50rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+   padding: 2rem;
+   border: 2px solid var(--mainColor);
+   border-radius: 2rem;   }
+.log_in h1 {
+   width: fit-content;
+   margin: 0 auto;
+   padding-bottom: 0.5rem;
+   border-bottom: 0.5rem dotted var(--mainColor);
+   font-size: 4rem;
+   color: var(--mainColor);   }
+.log_in .inp {
+   width: 100%;
+   height: 4rem;
+   position: relative; }
+.log_in .inp i {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: 0.5rem ;
+   font-size: 2rem;
+   color: var(--mainColor);
+   z-index: 10;   }
+.log_in .inp input:focus {
+   outline: none ;
+   border-bottom: 2px solid var(--mainColor) ;   }
+.log_in .inp input {
+   outline: none ;
+   border: none ;
+   border-bottom: 1px solid var(--mainColor) ;
+   width: 100%;
+   line-height: 4rem;
+   font-size: 1.8rem;
+   padding-left: 3rem;
+   background-color: transparent;
+   transition: 0.4s;
+   color: white;   }
+.log_in button {
+   letter-spacing: 1px;
+   border-radius: 1rem;
+   width: 100%;
+   border: 1px solid var(--mainColor);
+   padding: 1rem;
+   font-size: 2rem;
+   background: transparent;
+   color: var(--mainColor);
+   cursor: pointer;
+   transition: 0.4s;   }
+.log_in button:hover {
+   color: white;
+   background-color: var(--mainColor);   } 
+/*----------------*/
